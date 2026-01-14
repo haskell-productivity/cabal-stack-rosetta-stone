@@ -15,8 +15,8 @@ A comprehensive guide for translating between Cabal and Stack commands and conce
 
 | Cabal | Stack |
 |-------|-------|
-| [`cabal init`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-init) | [`stack new`](https://docs.haskellstack.org/en/stable/GUIDE/#start-your-new-project) |
-| [`cabal update`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-update) | [`stack update`](https://docs.haskellstack.org/en/stable/GUIDE/#updating-your-package-index) |
+| [`cabal init`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-init) | [`stack new`](https://docs.haskellstack.org/en/stable/commands/new_command/) |
+| [`cabal update`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-update) | [`stack update`](https://docs.haskellstack.org/en/stable/commands/update_command/) |
 
 **Explanation:**
 - `cabal init` creates a new Cabal project with a `.cabal` file, while `stack new` creates a new Stack project with a complete project structure including `stack.yaml`, `package.yaml` (or `.cabal` file), and project templates.
