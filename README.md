@@ -62,7 +62,7 @@ A comprehensive guide for translating between Cabal and Stack commands and conce
 |-------|-------|
 | [`cabal test`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-test) | [`stack test`](https://docs.haskellstack.org/en/stable/commands/test_command/) |
 | [`cabal bench`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-bench) | [`stack bench`](https://docs.haskellstack.org/en/stable/commands/bench_command/) |
-| [`cabal test --enable-coverage`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-test) | [`stack test --coverage`](https://docs.haskellstack.org/en/stable/commands/test_command/) |
+| [`cabal test --enable-coverage`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-test) | [`stack test --coverage`](https://docs.haskellstack.org/en/stable/coverage/) |
 
 **Explanation:**
 - Both `cabal test` and `stack test` run your test suites defined in the package configuration.
@@ -86,7 +86,7 @@ A comprehensive guide for translating between Cabal and Stack commands and conce
 
 | Cabal | Stack |
 |-------|-------|
-| [`--program-suffix`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cmdoption-program-suffix) | Use [`--copy-bins`](https://docs.haskellstack.org/en/stable/yaml_configuration/) with [`rename` in stack.yaml](https://docs.haskellstack.org/en/stable/yaml_configuration/) |
+| [`--program-suffix`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cmdoption-program-suffix) | No direct equivalent (manually rename after [`stack install`](https://docs.haskellstack.org/en/stable/commands/install_command/)) |
 | [`--allow-newer`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cmdoption-allow-newer) | Use [`allow-newer: true`](https://docs.haskellstack.org/en/stable/yaml_configuration/) in `stack.yaml` |
 | [`--test-options`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cmdoption-test-options) | [`--test-arguments`](https://docs.haskellstack.org/en/stable/commands/test_command/) or `--ta` |
 | [`--ghc-options`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cmdoption-ghc-options) | [`--ghc-options`](https://docs.haskellstack.org/en/stable/yaml_configuration/) (same flag) |
