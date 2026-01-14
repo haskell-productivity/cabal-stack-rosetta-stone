@@ -95,7 +95,7 @@ A comprehensive guide for translating between Cabal and Stack commands and conce
 | [`cabal info <package>`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-info) | No direct equivalent |
 | [`cabal user-config`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-user-config) | Edit [`~/.stack/config.yaml`](https://docs.haskellstack.org/en/stable/yaml_configuration/#non-project-specific-config) manually |
 | [`cabal path`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-path) | [`stack path`](https://docs.haskellstack.org/en/stable/GUIDE/#path) |
-| [`cabal v2-build --enable-profiling`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-build) | [`stack build --profile`](https://docs.haskellstack.org/en/stable/GUIDE/#debugging) |
+| [`cabal build --enable-profiling`](https://cabal.readthedocs.io/en/stable/cabal-commands.html#cabal-build) | [`stack build --profile`](https://docs.haskellstack.org/en/stable/GUIDE/#debugging) |
 
 **Explanation:**
 - `cabal configure` was primarily used in v1 commands; v2 commands (nix-style builds) configure automatically. Stack uses `stack.yaml` for configuration.
